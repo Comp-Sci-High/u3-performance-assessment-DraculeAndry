@@ -1,56 +1,106 @@
+/* style.css */
 
-.navbar-custom {
-    background: linear-gradient(to right, #003366, #ff6600); /* Gradient from dark blue to orange */
-    border-bottom: 5px solid #ffcc00; /* Gold border */
-}
-.navbar-custom .navbar-nav .nav-link {
-    color: #ffffff; /* White color for navbar links */
-}
-.navbar-custom .navbar-nav .nav-link:hover {
-    color: #ffcc00; /* Gold hover effect */
-}
-.navbar-custom .navbar-brand {
-    color: #ffffff; /* White for the brand */
-}
-.navbar-custom .navbar-brand:hover {
-    color: #ffcc00; /* Gold hover effect */
-}
-
-/* Header Styles */
-header {
-    background: url('https://example.com/one-piece-ocean-bg.jpg') no-repeat center center; 
-    background-size: cover;
-    height: 350px;
-    color: white;
-    text-align: center;
-    padding-top: 100px; /* Vertically center text */
-    position: relative;
-}
-header h1 {
-    font-size: 3.5rem;
-    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5); /* Add shadow for better readability */
-}
-header p {
-    font-size: 1.5rem;
-}
-
-/* Barrier Under the Header */
-.navbar-barrier {
-    width: 100%;
-    height: 10px;
-    background-color: #ffcc00; /* Gold barrier */
-    margin-top: -10px;
-}
-
-/* Footer */
-.footer {
-    background-color: #003366;
-    color: white;
+/* One Piece Color Scheme */
+body {
+    background-color: #f5deb3; /* Light Beige */
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Navbar Styling */
+  .navbar {
+    background-color: #004e92; /* Navy Blue */
+  }
+  
+  .navbar-brand, .nav-link {
+    color: #f2b632 !important; /* Golden Yellow */
+  }
+  
+  .navbar-nav .nav-link:hover {
+    color: #d92d2b !important; /* Red */
+    text-decoration: underline;
+  }
+  
+  /* Button Styles */
+  .btn-primary {
+    background-color: #f2b632; /* Golden Yellow */
+    border-color: #d92d2b; /* Red */
+    font-weight: bold;
+  }
+  
+  .btn-primary:hover {
+    background-color: #d92d2b; /* Red */
+    border-color: #f2b632; /* Golden Yellow */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #004e92; /* Navy Blue */
+    color: #f2b632; /* Golden Yellow */
     padding: 20px;
+    font-size: 1.2rem;
+  }
+  
+  /* Heading Styles */
+  h1, h3 {
     text-align: center;
-}
-
-.container {
-    background-color: #f5f5f5;
-    padding-top: 50px;
-}
+    color: #004e92; /* Navy Blue */
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
+  
+  /* Card Styling */
+  .card {
+    border: 2px solid #d92d2b; /* Red */
+    margin: 10px 0;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card-body {
+    background-color: #ffffff; /* White */
+    color: #4a2a28; /* Dark Brown */
+    padding: 30px;
+    text-align: center;
+  }
+  
+  .card-title {
+    color: #004e92; /* Navy Blue */
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+  }
+  
+  .card-text {
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+  }
+  
+  /* Card Group Styling */
+  .card-group {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+  
+  /* Centering Container */
+  .container {
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  /* Animations */
+  .animate-text {
+    animation: fadeIn 2s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(30px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+  
